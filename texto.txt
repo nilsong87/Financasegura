@@ -1,0 +1,60 @@
+financasegura/
+├── images/
+│   ├── favicon/
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-32x32.png
+│   │   ├── favicon-16x16.png
+│   │   └── site.webmanifest
+│   ├── logo.png
+│   ├── logo-white.png
+│   ├── hero-image.png
+│   ├── security-badge.png
+│   ├── calculator-icon.svg
+│   ├── bacen-logo.png
+│   ├── abecs-logo.png
+│   ├── ssl-seal.png
+│   ├── reclame-aqui.png
+│   ├── client1.jpg
+│   ├── client2.jpg
+│   └── client3.jpg
+├── libs/
+│   └── (bibliotecas locais, se necessário)
+├── scripts/
+│   ├── main.js
+│   ├── calculator.js
+│   └── form-validation.js
+├── styles/
+│   ├── main.css
+│   └── responsive.css
+├── index.html
+└── (outras páginas HTML, se houver)
+
+
+
+financasegura/
+├── index.html              # Página inicial
+├── styles/
+│   ├── main.css            # Estilos principais
+│   └── responsive.css      # Estilos responsivos
+├── scripts/
+│   ├── main.js             # JavaScript principal
+│   ├── calculator.js       # Lógica da calculadora
+│   └── form-validation.js  # Validação de formulários
+├── images/                 # Pasta de imagens
+│   ├── logo.png
+│   ├── hero-image.png
+│   ├── favicon/            # Ícones para favicon
+│   └── team/               # Fotos da equipe
+├── about.html              # Sobre nós
+├── login.html              # Área do cliente
+├── register.html           # Cadastro
+├── forgot-password.html    # Recuperação de senha
+├── terms.html              # Termos de uso
+├── privacy.html            # Política de privacidade
+├── careers.html            # Trabalhe conosco
+├── ombudsman.html          # Ouvidoria
+├── portability.html        # Portabilidade de crédito
+└── faq-full.html           # FAQ completo
+
+
+

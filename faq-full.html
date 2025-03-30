@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes | FinançaSegura</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+        
+        <!-- Security Headers -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone-alt"></i> (11) 4004-4004</span>
+                    <span><i class="fas fa-envelope"></i> contato@financasegura.com.br</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</span>
+                </div>
+                <div class="security-badge">
+                    <img src="images/security-badge.png" alt="Site Seguro" title="Site 100% seguro com criptografia SSL">
+                    <span>Ambiente 100% Seguro</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="FinançaSegura">
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#emprestimos">Empréstimos</a></li>
+                        <li><a href="#simulador">Simulador</a></li>
+                        <li><a href="#beneficios">Benefícios</a></li>
+                        <li><a href="#duvidas">Dúvidas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-outline"><i class="fas fa-user"></i> Área do Cliente</a>
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+    <!-- FAQ Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Perguntas Frequentes</h1>
+            <p>Tire todas suas dúvidas sobre nossos produtos e serviços</p>
+        </div>
+    </section>
+
+    <!-- FAQ Search -->
+    <section class="faq-search section-padding">
+        <div class="container">
+            <div class="search-container">
+                <form id="faqSearchForm">
+                    <div class="search-input">
+                        <input type="text" placeholder="Digite sua dúvida...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+                <p class="search-tips">Exemplos: "Como simular um empréstimo", "Taxas de juros", "Documentos necessários"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories section-padding bg-light">
+        <div class="container">
+            <h2 class="section-subheader">Navegue por categorias</h2>
+            
+            <div class="categories-grid">
+                <a href="#emprestimos" class="category-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Empréstimos</h3>
+                </a>
+                
+                <a href="#consignado" class="category-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Consignado</h3>
+                </a>
+                
+                <a href="#portabilidade" class="category-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Portabilidade</h3>
+                </a>
+                
+                <a href="#refinanciamento" class="category-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Refinanciamento</h3>
+                </a>
+                
+                <a href="#cadastro" class="category-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Cadastro</h3>
+                </a>
+                
+                <a href="#pagamentos" class="category-card">
+                    <i class="fas fa-barcode"></i>
+                    <h3>Pagamentos</h3>
+                </a>
+                
+                <a href="#seguranca" class="category-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Segurança</h3>
+                </a>
+                
+                <a href="#outros" class="category-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Outros</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content section-padding">
+        <div class="container">
+            <div class="faq-section" id="emprestimos">
+                <h2 class="section-subheader">Empréstimos Pessoais</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quais são os requisitos para solicitar um empréstimo pessoal?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para solicitar um empréstimo pessoal na FinançaSegura, você precisa:</p>
+                            <ul>
+                                <li>Ter entre 18 e 70 anos</li>
+                                <li>Possuir CPF válido</li>
+                                <li>Ter renda comprovada de pelo menos R$ 1.000,00 mensais</li>
+                                <li>Não ter restrições no nome (como CPF negativado)</li>
+                                <li>Conta bancária em seu nome</li>
+                                <li>Comprovante de residência atualizado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quanto tempo leva para o dinheiro cair na minha conta?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Após a aprovação do crédito e assinatura do contrato digital, o dinheiro é depositado em até 24 horas úteis. Em 80% dos casos, o valor cai no mesmo dia da aprovação, dependendo do horário de conclusão da análise.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Posso antecipar as parcelas do meu empréstimo?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, você pode antecipar parcelas a qualquer momento, total ou parcialmente, com redução proporcional dos juros. Não cobramos taxas por antecipação e o processo pode ser feito diretamente pela área do cliente em nosso site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section" id="consignado">
+                <h2 class="section-subheader">Empréstimo Consignado</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quem pode solicitar empréstimo consignado?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O empréstimo consignado está disponível para:</p>
+                            <ul>
+                                <li>Aposentados e pensionistas do INSS</li>
+                                <li>Servidores públicos federais, estaduais e municipais</li>
+                                <li>Militares das Forças Armadas</li>
+                                <li>Trabalhadores com carteira assinada de empresas conveniadas</li>
+                            </ul>
+                            <p>É necessário que o órgão pagador (INSS, prefeitura, estado, etc.) tenha convênio com a FinançaSegura.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Qual o valor máximo que posso pegar no consignado?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O valor máximo depende da sua margem consignável:</p>
+                            <ul>
+                                <li>INSS: até 35% da sua renda líquida</li>
+                                <li>Servidores públicos: até 30% da renda líquida</li>
+                                <li>Empresas privadas: até 20% da renda líquida</li>
+                            </ul>
+                            <p>O valor também está sujeito à análise de crédito e políticas da instituição financeira.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section" id="portabilidade">
+                <h2 class="section-subheader">Portabilidade de Crédito</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quanto posso economizar com a portabilidade?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A economia varia conforme o saldo devedor, as taxas atuais e o prazo remanescente. Em média, nossos clientes economizam entre 15% e 40% no custo total do empréstimo. Faça uma simulação em nossa calculadora de portabilidade para obter uma estimativa personalizada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seção de Refinanciamento -->
+            <div class="faq-section" id="refinanciamento">
+                <h2 class="section-subheader">Refinanciamento</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Qual a diferença entre refinanciamento e portabilidade?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A <strong>portabilidade</strong> é a transferência do seu empréstimo de uma instituição para outra, mantendo basicamente as mesmas condições (valor, parcelas), mas com taxas menores. Já o <strong>refinanciamento</strong> é a contratação de um novo empréstimo para pagar o saldo devedor do anterior, podendo alterar valor, prazo e parcelas.</p>
+                            <p>O refinanciamento é indicado quando você precisa de mais dinheiro ou quer alongar o prazo para reduzir o valor das parcelas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Posso refinanciar mais de um empréstimo ao mesmo tempo?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, é possível unificar vários empréstimos em uma única operação de refinanciamento. Isso pode simplificar seus pagamentos e, em muitos casos, reduzir o valor total das parcelas. Nossos consultores podem analisar seu caso específico e indicar a melhor solução.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O refinanciamento melhora meu score de crédito?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, a médio/longo prazo. Ao refinanciar dívidas em atraso ou com parcelas altas, você regulariza sua situação e pode conseguir condições mais adequadas à sua renda, facilitando o pagamento em dia. Manter as novas parcelas em dia ajudará a reconstruir seu histórico creditício.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seção de Cadastro -->
+            <div class="faq-section" id="cadastro">
+                <h2 class="section-subheader">Cadastro e Conta</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quais documentos preciso para me cadastrar?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para criar sua conta e solicitar um empréstimo, você precisará de:</p>
+                            <ul>
+                                <li>Documento de identidade (RG, CNH ou RNE) - frente e verso</li>
+                                <li>CPF</li>
+                                <li>Comprovante de residência recente (conta de luz, água ou telefone)</li>
+                                <li>Comprovante de renda (holerite, extrato bancário ou declaração do contador)</li>
+                                <li>Selfie segurando o documento de identidade (para validação facial)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Esqueci minha senha, como recuperar?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Na página de login, clique em "Esqueci minha senha". Você receberá um e-mail com um link para criar uma nova senha. O link tem validade de 24 horas. Caso não receba o e-mail, verifique sua pasta de spam ou entre em contato com nosso atendimento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Posso ter mais de um empréstimo ao mesmo tempo?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, desde que sua renda comprovada permita assumir o compromisso com os pagamentos. Nossa análise considera sua capacidade de endividamento para aprovar novas operações. Você pode simular um novo empréstimo mesmo tendo um ativo para verificar a possibilidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seção de Pagamentos -->
+            <div class="faq-section" id="pagamentos">
+                <h2 class="section-subheader">Pagamentos</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quais são as formas de pagamento disponíveis?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos várias opções para seu pagamento:</p>
+                            <ul>
+                                <li><strong>Débito automático</strong>: A forma mais prática e com desconto</li>
+                                <li><strong>Boleto bancário</strong>: Pode ser pago em qualquer banco ou lotérica</li>
+                                <li><strong>PIX</strong>: Pagamento instantâneo via chave PIX</li>
+                                <li><strong>Cartão de crédito</strong>: Parcele sua parcela no cartão (sujeito a taxas)</li>
+                                <li><strong>Desconto em folha</strong>: Para empréstimos consignados</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O que acontece se eu atrasar o pagamento?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Em caso de atraso:</p>
+                            <ol>
+                                <li>Serão cobrados juros e multa conforme o contrato</li>
+                                <li>Seu nome poderá ser negativado após 5 dias de atraso</li>
+                                <li>Seu score de crédito será impactado</li>
+                                <li>Novas operações poderão ser bloqueadas</li>
+                            </ol>
+                            <p>Recomendamos entrar em contato imediatamente se tiver dificuldades para pagar. Podemos avaliar opções como renegociação ou refinanciamento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como solicitar a segunda via do boleto?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você pode gerar a segunda via do boleto diretamente na sua área do cliente, na seção "Meus Pagamentos". Caso tenha dificuldades, nosso atendimento pode enviar o boleto por e-mail ou WhatsApp. Lembrando que boletos têm códigos diferentes a cada emissão, então sempre use o mais recente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seção de Segurança -->
+            <div class="faq-section" id="seguranca">
+                <h2 class="section-subheader">Segurança</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como sei que meus dados estão seguros?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Na FinançaSegura, utilizamos as melhores práticas de segurança:</p>
+                            <ul>
+                                <li>Criptografia SSL de 256 bits em todas as comunicações</li>
+                                <li>Certificado digital e selos de segurança</li>
+                                <li)Conformidade com a LGPD (Lei Geral de Proteção de Dados)</li>
+                                <li>Sistemas monitorados 24/7 contra invasões</li>
+                                <li>Autenticação de dois fatores opcional</li>
+                                <li>Registro no Banco Central como correspondente bancário</li>
+                            </ul>
+                            <p>Nunca solicitamos senhas ou dados completos do cartão por telefone ou e-mail.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O que fazer se suspeitar de fraude?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Caso suspeite de qualquer atividade fraudulenta:</p>
+                            <ol>
+                                <li>Altere imediatamente sua senha na área do cliente</li>
+                                <li>Entre em contato com nosso time de segurança pelo e-mail segurança@financasegura.com.br</li>
+                                <li>Se forneceu dados do cartão, entre em contato com seu banco para bloqueá-lo</li>
+                                <li>Registre um boletim de ocorrência</li>
+                            </ol>
+                            <p>Nossa equipe investigará imediatamente qualquer suspeita de fraude.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Seção Outros -->
+            <div class="faq-section" id="outros">
+                <h2 class="section-subheader">Outros Assuntos</h2>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como cancelar meu empréstimo após a contratação?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você tem até 7 dias corridos após a contratação para desistir do empréstimo sem custos (direito de arrependimento). Basta enviar um e-mail para cancelamento@financasegura.com.br com seu número de contrato e dados de identificação. O valor já creditado deverá ser devolvido integralmente.</p>
+                            <p>Após esse período, o cancelamento está sujeito às condições contratuais e taxas de amortização.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como funciona o seguro prestamista?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O seguro prestamista protege você e sua família em casos de:</p>
+                            <ul>
+                                <li>Morte (natural ou acidental)</li>
+                                <li>Invalidez permanente</li>
+                                <li>Doenças graves (conforme previsto na apólice)</li>
+                            </ul>
+                            <p>Nesses casos, a seguradora assume o pagamento das parcelas restantes. O valor do seguro já está incluído no CET (Custo Efetivo Total) do empréstimo. Você pode consultar os detalhes da cobertura na página 3 do seu contrato.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Onde posso ver meu contrato?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Seu contrato digital está disponível:</p>
+                            <ul>
+                                <li>Na sua área do cliente, na seção "Meus Contratos"</li>
+                                <li>No e-mail que enviamos no dia da contratação</li>
+                                <li>Solicitando pelo nosso atendimento via chat, e-mail ou telefone</li>
+                            </ul>
+                            <p>Você também pode solicitar uma cópia impressão em qualquer agência da FinançaSegura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <div class="cta-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Não encontrou sua dúvida?</h3>
+                    <p>Nossa equipe está pronta para te ajudar</p>
+                    <a href="contato.html" class="btn btn-primary">Fale conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <img src="images/logo-white.png" alt="FinançaSegura" class="footer-logo">
+                        <p>A FinançaSegura é uma instituição financeira autorizada pelo Banco Central do Brasil, especializada em soluções de crédito pessoal e consignado.</p>
+                        
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Empréstimos</h3>
+                        <ul>
+                            <li><a href="pessoal.html">Pessoal</a></li>
+                            <li><a href="consignado.html">Consignado</a></li>
+                            <li><a href="refinanciamento.html">Refinanciamento</a></li>
+                            <li><a href="portability.html">Portabilidade</a></li>
+                            <li><a href="taxas-prazos.html">Taxas e prazos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Institucional</h3>
+                        <ul>
+                            <li><a href="about.html">Sobre nós</a></li>
+                            <li><a href="carrers.html">Trabalhe conosco</a></li>
+                            <li><a href="terms.html">Termos de uso</a></li>
+                            <li><a href="privacy.html">Política de privacidade</a></li>
+                            <li><a href="ombudsman.html">Ouvidoria</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Ajuda</h3>
+                        <ul>
+                            <li><a href="faq-full.html">Dúvidas frequentes</a></li>
+                            <li><a href="ombudsman.html">Atendimento</a></li>
+                            <li><a href="ombudsman.html">Canais de atendimento</a></li>
+                            <li><a href="ombudsman.html">Reclamações</a></li>
+                            <li><a href="#">SAC 0800</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Receba nossas novidades e ofertas exclusivas</p>
+                        <form id="newsletterForm">
+                            <div class="form-group">
+                                <input type="email" placeholder="Seu melhor e-mail" required>
+                                <button type="submit" class="btn-newsletter">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div class="app-download">
+                            <p>Baixe nosso app:</p>
+                            <div class="app-buttons">
+                                <a href="#"><img src="images/google-play-badge.png" alt="Disponível no Google Play"></a>
+                                <a href="#"><img src="images/app-store-badge.png" alt="Baixar na App Store"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-disclaimer">
+                        <p>FinançaSegura S.A. - CNPJ: 00.000.000/0000-00 - © 2023 Todos os direitos reservados a Nilson Gomes</p>
+                        <p>Taxas de juros válidas para contratações até 30/03/2025. Consulte condições.</p>
+                    </div>
+                    
+                    <div class="footer-seals">
+                        <img src="images/abecs-seal.png" alt="ABECS">
+                        <img src="images/banco-central-seal.png" alt="Registro Banco Central">
+                        <img src="images/procon-seal.png" alt="Procon">
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

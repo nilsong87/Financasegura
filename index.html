@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinançaSegura | Empréstimos Pessoais e Consignados</title>
+    <meta name="description" content="Soluções financeiras seguras com as melhores taxas do mercado. Empréstimos pessoais, consignados e refinanciamento.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> (11) 4004-4004</span>
+                <span><i class="fas fa-envelope"></i> contato@financasegura.com.br</span>
+                <span><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</span>
+            </div>
+            <div class="security-badge">
+                <img src="images/security-badge.png" alt="Site Seguro" title="Site 100% seguro com criptografia SSL">
+                <span>Ambiente 100% Seguro</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="FinançaSegura">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#emprestimos">Empréstimos</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-outline"><i class="fas fa-user"></i> Área do Cliente</a>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate__animated animate__fadeInLeft">
+                <h1>O empréstimo que você precisa com as melhores condições</h1>
+                <p class="subtitle">Taxas a partir de 1,29% ao mês. Aprovação rápida e dinheiro na conta em até 24h.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#simulador" class="btn btn-primary">Simular Empréstimo</a>
+                    <a href="#beneficios" class="btn btn-outline-white">Conheça as vantagens</a>
+                </div>
+                
+                <div class="trust-signals">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% seguro</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-lock"></i>
+                        <span>Dados protegidos</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-badge-check"></i>
+                        <span>Registrado no BACEN</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img src="images/hero-image.png" alt="Empréstimo fácil e rápido">
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Types Section -->
+    <section id="emprestimos" class="loan-types section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tipos de Empréstimo</h2>
+                <p>Escolha a solução que melhor atende às suas necessidades</p>
+            </div>
+            
+            <div class="loan-cards">
+                <!-- Empréstimo Pessoal -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Empréstimo Pessoal</h3>
+                    <p>Dinheiro rápido para resolver suas necessidades sem burocracia.</p>
+                    <ul class="loan-features">
+                        <li><i class="fas fa-check-circle"></i> Até R$ 50.000,00</li>
+                        <li><i class="fas fa-check-circle"></i> Até 60 meses para pagar</li>
+                        <li><i class="fas fa-check-circle"></i> Taxas a partir de 1,29% a.m.</li>
+                    </ul>
+                    <a href="#simulador" class="btn btn-outline">Simular agora</a>
+                </div>
+                
+                <!-- Empréstimo Consignado -->
+                <div class="loan-card highlight">
+                    <div class="loan-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Empréstimo Consignado</h3>
+                    <p>As melhores taxas para aposentados, pensionistas e servidores públicos.</p>
+                    <ul class="loan-features">
+                        <li><i class="fas fa-check-circle"></i> Até 35% da renda</li>
+                        <li><i class="fas fa-check-circle"></i> Até 84 meses para pagar</li>
+                        <li><i class="fas fa-check-circle"></i> Taxas a partir de 0,89% a.m.</li>
+                    </ul>
+                    <a href="#simulador" class="btn btn-primary">Simular agora</a>
+                </div>
+                
+                <!-- Refinanciamento -->
+                <div class="loan-card">
+                    <div class="loan-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Refinanciamento</h3>
+                    <p>Renegocie suas dívidas e tenha mais tranquilidade no seu orçamento.</p>
+                    <ul class="loan-features">
+                        <li><i class="fas fa-check-circle"></i> Reduza seus juros</li>
+                        <li><i class="fas fa-check-circle"></i> Unifique seus pagamentos</li>
+                        <li><i class="fas fa-check-circle"></i> Melhore seu score</li>
+                    </ul>
+                    <a href="#simulador" class="btn btn-outline">Simular agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="simulador" class="calculator-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simule seu Empréstimo</h2>
+                <p>Descubra o valor das parcelas e o total a pagar de forma transparente</p>
+            </div>
+            
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <form id="loanCalculator">
+                        <div class="form-group">
+                            <label for="loanType">Tipo de Empréstimo</label>
+                            <select id="loanType" name="loanType" required>
+                                <option value="">Selecione...</option>
+                                <option value="personal">Empréstimo Pessoal</option>
+                                <option value="consigned">Empréstimo Consignado</option>
+                                <option value="refinancing">Refinanciamento</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="loanAmount">Valor Desejado (R$)</label>
+                            <div class="input-with-slider">
+                                <input type="number" id="loanAmount" name="loanAmount" min="1000" max="100000" step="500" value="10000" required>
+                                <div id="amountSlider" class="range-slider"></div>
+                                <div class="range-labels">
+                                    <span>R$ 1.000</span>
+                                    <span>R$ 100.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="installments">Parcelas</label>
+                            <div class="input-with-slider">
+                                <select id="installments" name="installments" required>
+                                    <option value="12">12x</option>
+                                    <option value="24">24x</option>
+                                    <option value="36">36x</option>
+                                    <option value="48">48x</option>
+                                    <option value="60">60x</option>
+                                </select>
+                                <div id="installmentsSlider" class="range-slider"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="income">Renda Mensal (R$)</label>
+                            <input type="number" id="income" name="income" min="1000" step="100" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Calcular Empréstimo</button>
+                    </form>
+                </div>
+                
+                <div class="calculator-results">
+                    <div class="results-placeholder">
+                        <img src="images/calculator-icon.svg" alt="Calculadora" style="filter: invert(100%);">
+                        <p>Preencha os dados ao lado para simular seu empréstimo</p>
+                    </div>
+                    
+                    <div class="results-content" style="display: none;">
+                        <h3>Resultado da Simulação</h3>
+                        <div class="result-item">
+                            <span>Valor solicitado</span>
+                            <strong id="resultAmount">R$ 10.000,00</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Parcelas</span>
+                            <strong id="resultInstallments">24x</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Taxa de juros</span>
+                            <strong id="resultRate">1,29% a.m.</strong>
+                        </div>
+                        <div class="result-item highlight">
+                            <span>Valor da parcela</span>
+                            <strong id="resultMonthly">R$ 542,34</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Total a pagar</span>
+                            <strong id="resultTotal">R$ 13.016,16</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>CET (Custo Efetivo Total)</span>
+                            <strong id="resultCET">18,42% a.a.</strong>
+                        </div>
+                        
+                        <div class="result-actions">
+                            <button id="saveSimulation" class="btn btn-outline">
+                                <i class="fas fa-save"></i> Salvar simulação
+                            </button>
+                            <button id="requestLoan" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Solicitar empréstimo
+                            </button>
+                        </div>
+                        
+                        <div class="result-disclaimer">
+                            <p><i class="fas fa-info-circle"></i> Esta simulação tem validade de 30 dias. Valores sujeitos a alteração e aprovação de crédito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="benefits-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher a FinançaSegura?</h2>
+                <p>Conheça as vantagens de fazer seu empréstimo conosco</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Rapidez</h3>
+                    <p>Aprovação em até 2 horas e dinheiro na conta em 24h após a assinatura do contrato.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Taxas competitivas</h3>
+                    <p>As menores taxas do mercado, sem cobrança de tarifas escondidas.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Segurança</h3>
+                    <p>Todos os dados são criptografados e protegidos conforme as normas do BACEN.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Sem pegadinhas</h3>
+                    <p>Contrato claro e transparente, sem letras miúdas ou cláusulas abusivas.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Atendimento personalizado</h3>
+                    <p>Consultores especializados para te ajudar a encontrar a melhor solução.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>100% digital</h3>
+                    <p>Tudo resolvido online, sem necessidade de se deslocar até uma agência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que nossos clientes dizem</h2>
+                <p>Mais de 50.000 pessoas já melhoraram suas vidas com nossos empréstimos</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Consegui quitar minhas dívidas com cartão de crédito e ainda sobraram recursos para reformar minha casa. Processo super rápido e atendimento excelente!"</p>
+                    <div class="testimonial-author">
+                        <img src="images/client1.jpg" alt="Cliente">
+                        <div>
+                            <h4>Marcos Antônio</h4>
+                            <span>Professor, São Paulo/SP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Como aposentada, precisei de um empréstimo consignado para custear o tratamento de saúde do meu marido. A FinançaSegura me atendeu com respeito e agilidade."</p>
+                    <div class="testimonial-author">
+                        <img src="images/client2.jpg" alt="Cliente">
+                        <div>
+                            <h4>Maria da Silva</h4>
+                            <span>Aposentada, Belo Horizonte/MG</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Fiz um refinanciamento das minhas dívidas e consegui reduzir minhas parcelas em 40%. Agora consigo respirar melhor financeiramente."</p>
+                    <div class="testimonial-author">
+                        <img src="images/client3.jpg" alt="Cliente">
+                        <div>
+                            <h4>Roberto Carlos</h4>
+                            <span>Empresário, Rio de Janeiro/RJ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trust-badges">
+                <img src="images/bacen-logo.png" alt="Registrado no BACEN">
+                <img src="images/abecs-logo.png" alt="Associado ABECS">
+                <img src="images/ssl-seal.png" alt="SSL Seguro">
+                <img src="images/reclame-aqui.png" alt="Ótimo no Reclame Aqui">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="duvidas" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dúvidas Frequentes</h2>
+                <p>Tire suas dúvidas sobre empréstimos e nossos serviços</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quais são os requisitos para solicitar um empréstimo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para solicitar um empréstimo na FinançaSegura, você precisa: ter mais de 18 anos, possuir CPF válido, comprovante de residência em seu nome (ou de parente próximo), comprovante de renda e conta bancária em seu nome. Para empréstimos consignados, é necessário estar em dia com os pagamentos junto ao órgão pagador.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quanto tempo leva para o dinheiro cair na minha conta?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Após a aprovação do seu crédito e assinatura do contrato digital, o dinheiro é depositado em até 24 horas úteis. Em alguns casos, dependendo do horário de aprovação, o valor pode cair no mesmo dia.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como é feita a análise de crédito?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossa análise considera diversos fatores como: score de crédito, histórico financeiro, renda comprovada, endividamento atual e capacidade de pagamento. Utilizamos tecnologia avançada para uma avaliação justa e rápida.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso antecipar as parcelas do meu empréstimo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, você pode antecipar parcelas a qualquer momento, total ou parcialmente, com redução proporcional dos juros. Não cobramos taxas por antecipação.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O que é CET e como é calculado?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>CET (Custo Efetivo Total) é o valor total do empréstimo, incluindo juros, tarifas e seguros, expresso em porcentagem anual. Ele demonstra o custo real do crédito, permitindo comparação entre diferentes ofertas. Nosso simulador mostra o CET antes da contratação.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Ainda tem dúvidas? Fale com nossos especialistas!</p>
+                <a href="#contato" class="btn btn-primary">Fale conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fale conosco</h2>
+                <p>Estamos aqui para ajudar no que você precisar</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(11) 4004-4004</p>
+                            <small>Segunda a sexta, das 8h às 20h</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@financasegura.com.br</p>
+                            <small>Respondemos em até 2 horas úteis</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Av. Paulista, 1000 - 12º andar</p>
+                            <p>Bela Vista - São Paulo/SP</p>
+                            <small>CEP: 01310-100</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div>
+                            <h3>Redes Sociais</h3>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Nome completo</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">E-mail</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactPhone">Telefone</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Assunto</label>
+                            <select id="contactSubject" name="contactSubject" required>
+                                <option value="">Selecione...</option>
+                                <option value="loan">Dúvida sobre empréstimos</option>
+                                <option value="contract">Dúvida sobre contratos</option>
+                                <option value="payment">Problemas com pagamento</option>
+                                <option value="other">Outros assuntos</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Mensagem</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="contactAgreement" name="contactAgreement" required>
+                            <label for="contactAgreement">Concordo em receber comunicações da FinançaSegura</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loan Application Modal -->
+    <div id="loanModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            
+            <div class="modal-header">
+                <h2>Solicitar Empréstimo</h2>
+                <p>Preencha seus dados para dar continuidade ao processo</p>
+            </div>
+            
+            <form id="loanApplicationForm">
+                <div class="form-step active" data-step="1">
+                    <h3>Dados Pessoais</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantName">Nome completo</label>
+                            <input type="text" id="applicantName" name="applicantName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantCPF">CPF</label>
+                            <input type="text" id="applicantCPF" name="applicantCPF" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantEmail">E-mail</label>
+                            <input type="email" id="applicantEmail" name="applicantEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantPhone">Telefone</label>
+                            <input type="tel" id="applicantPhone" name="applicantPhone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantBirthdate">Data de nascimento</label>
+                            <input type="date" id="applicantBirthdate" name="applicantBirthdate" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantMother">Nome da mãe</label>
+                            <input type="text" id="applicantMother" name="applicantMother" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" data-next="2">Próximo</button>
+                    </div>
+                </div>
+                
+                <div class="form-step" data-step="2">
+                    <h3>Endereço</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantCEP">CEP</label>
+                            <input type="text" id="applicantCEP" name="applicantCEP" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantStreet">Logradouro</label>
+                            <input type="text" id="applicantStreet" name="applicantStreet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantNumber">Número</label>
+                            <input type="text" id="applicantNumber" name="applicantNumber" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantComplement">Complemento</label>
+                            <input type="text" id="applicantComplement" name="applicantComplement">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantNeighborhood">Bairro</label>
+                            <input type="text" id="applicantNeighborhood" name="applicantNeighborhood" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantCity">Cidade</label>
+                            <input type="text" id="applicantCity" name="applicantCity" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantState">Estado</label>
+                            <select id="applicantState" name="applicantState" required>
+                                <option value="">Selecione...</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <!-- Todos os estados -->
+                                <option value="SP">São Paulo</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" data-prev="1">Voltar</button>
+                        <button type="button" class="btn btn-outline" data-next="3">Próximo</button>
+                    </div>
+                </div>
+                
+                <div class="form-step" data-step="3">
+                    <h3>Dados Financeiros</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applicantIncome">Renda mensal</label>
+                            <input type="text" id="applicantIncome" name="applicantIncome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="applicantOccupation">Ocupação</label>
+                            <select id="applicantOccupation" name="applicantOccupation" required>
+                                <option value="">Selecione...</option>
+                                <option value="clt">Assalariado CLT</option>
+                                <option value="pj">Pessoa Jurídica</option>
+                                <option value="public">Servidor Público</option>
+                                <option value="retired">Aposentado/Pensionista</option>
+                                <option value="autonomous">Autônomo</option>
+                                <option value="other">Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicantBank">Banco onde recebe seu salário</label>
+                        <select id="applicantBank" name="applicantBank" required>
+                            <option value="">Selecione...</option>
+                            <option value="001">Banco do Brasil</option>
+                            <option value="033">Santander</option>
+                            <option value="104">Caixa Econômica Federal</option>
+                            <option value="237">Bradesco</option>
+                            <option value="341">Itaú</option>
+                            <option value="other">Outros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Documentos necessários</label>
+                        <div class="documents-list">
+                            <div class="document-item">
+                                <input type="checkbox" id="docRG" name="docRG" required>
+                                <label for="docRG">RG ou CNH (frente e verso)</label>
+                            </div>
+                            <div class="document-item">
+                                <input type="checkbox" id="docCPF" name="docCPF" required>
+                                <label for="docCPF">CPF</label>
+                            </div>
+                            <div class="document-item">
+                                <input type="checkbox" id="docResidence" name="docResidence" required>
+                                <label for="docResidence">Comprovante de residência</label>
+                            </div>
+                            <div class="document-item">
+                                <input type="checkbox" id="docIncome" name="docIncome" required>
+                                <label for="docIncome">Comprovante de renda</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group file-upload">
+                        <label for="documents">Anexar documentos</label>
+                        <input type="file" id="documents" name="documents" multiple accept=".pdf,.jpg,.jpeg,.png">
+                        <div class="upload-area" id="uploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Arraste os arquivos aqui ou clique para selecionar</p>
+                            <small>Formatos aceitos: PDF, JPG, PNG (Tamanho máximo: 5MB cada)</small>
+                        </div>
+                        <div class="upload-preview" id="uploadPreview"></div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" data-prev="2">Voltar</button>
+                        <button type="submit" class="btn btn-primary">Enviar solicitação</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content small">
+            <span class="modal-close">&times;</span>
+            
+            <div class="modal-header">
+                <h2>Acesse sua conta</h2>
+                <p>Informe seus dados para acessar o sistema</p>
+            </div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginCPF">CPF</label>
+                    <input type="text" id="loginCPF" name="loginCPF" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Senha</label>
+                    <div class="password-input">
+                        <input type="password" id="loginPassword" name="loginPassword" required>
+                        <button type="button" class="show-password" aria-label="Mostrar senha">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <a href="#forgot-password" class="forgot-password">Esqueci minha senha</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                
+                <div class="login-options">
+                    <p>Não tem uma conta? <a href="#register">Cadastre-se</a></p>
+                    <div class="social-login">
+                        <p>Ou entre com:</p>
+                        <div class="social-buttons">
+                            <button type="button" class="btn-social google">
+                                <i class="fab fa-google"></i> Google
+                            </button>
+                            <button type="button" class="btn-social facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/logo-white.png" alt="FinançaSegura" class="footer-logo">
+                    <p>A FinançaSegura é uma instituição financeira autorizada pelo Banco Central do Brasil, especializada em soluções de crédito pessoal e consignado.</p>
+                    
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Empréstimos</h3>
+                    <ul>
+                        <li><a href="pessoal.html">Pessoal</a></li>
+                        <li><a href="consignado.html">Consignado</a></li>
+                        <li><a href="refinanciamento.html">Refinanciamento</a></li>
+                        <li><a href="portability.html">Portabilidade</a></li>
+                        <li><a href="taxas-prazos.html">Taxas e prazos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="about.html">Sobre nós</a></li>
+                        <li><a href="carrers.html">Trabalhe conosco</a></li>
+                        <li><a href="terms.html">Termos de uso</a></li>
+                        <li><a href="privacy.html">Política de privacidade</a></li>
+                        <li><a href="ombudsman.html">Ouvidoria</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="faq-full.html">Dúvidas frequentes</a></li>
+                        <li><a href="ombudsman.html">Atendimento</a></li>
+                        <li><a href="ombudsman.html">Canais de atendimento</a></li>
+                        <li><a href="ombudsman.html">Reclamações</a></li>
+                        <li><a href="#">SAC 0800</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Receba nossas novidades e ofertas exclusivas</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu melhor e-mail" required>
+                            <button type="submit" class="btn-newsletter">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="app-download">
+                        <p>Baixe nosso app:</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="images/google-play-badge.png" alt="Disponível no Google Play"></a>
+                            <a href="#"><img src="images/app-store-badge.png" alt="Baixar na App Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-disclaimer">
+                    <p>FinançaSegura S.A. - CNPJ: 00.000.000/0000-00 - © 2023 Todos os direitos reservados a Nilson Gomes</p>
+                    <p>Taxas de juros válidas para contratações até 30/03/2025. Consulte condições.</p>
+                </div>
+                
+                <div class="footer-seals">
+                    <img src="images/abecs-seal.png" alt="ABECS">
+                    <img src="images/banco-central-seal.png" alt="Registro Banco Central">
+                    <img src="images/procon-seal.png" alt="Procon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/551140044004" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>Precisa de ajuda?</span>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/calculator.js"></script>
+    <script src="scripts/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se | FinançaSegura</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> (11) 4004-4004</span>
+                <span><i class="fas fa-envelope"></i> contato@financasegura.com.br</span>
+                <span><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</span>
+            </div>
+            <div class="security-badge">
+                <img src="images/security-badge.png" alt="Site Seguro" title="Site 100% seguro com criptografia SSL">
+                <span>Ambiente 100% Seguro</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="FinançaSegura">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#emprestimos">Empréstimos</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="login.html" class="btn btn-outline"><i class="fas fa-user"></i> Área do Cliente</a>
+                <button class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Section -->
+    <section class="register-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Crie sua conta</h2>
+                <p>Preencha seus dados para começar a usar nossos serviços</p>
+            </div>
+            
+            <div class="register-container">
+                <form id="registrationForm">
+                    <div class="form-step active" data-step="1">
+                        <h3>Dados Pessoais</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regName">Nome completo</label>
+                                <input type="text" id="regName" name="regName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="regCPF">CPF</label>
+                                <input type="text" id="regCPF" name="regCPF" placeholder="000.000.000-00" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regEmail">E-mail</label>
+                                <input type="email" id="regEmail" name="regEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="regPhone">Telefone</label>
+                                <input type="tel" id="regPhone" name="regPhone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regBirthdate">Data de nascimento</label>
+                                <input type="date" id="regBirthdate" name="regBirthdate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="regMother">Nome da mãe</label>
+                                <input type="text" id="regMother" name="regMother" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" data-next="2">Próximo</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step" data-step="2">
+                        <h3>Dados de Acesso</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="regPassword">Senha</label>
+                                <div class="password-input">
+                                    <input type="password" id="regPassword" name="regPassword" required>
+                                    <button type="button" class="show-password" aria-label="Mostrar senha">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <small>Mínimo de 8 caracteres, incluindo números e letras</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="regConfirmPassword">Confirme sua senha</label>
+                                <div class="password-input">
+                                    <input type="password" id="regConfirmPassword" name="regConfirmPassword" required>
+                                    <button type="button" class="show-password" aria-label="Mostrar senha">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="regTerms" name="regTerms" required>
+                            <label for="regTerms">Li e aceito os <a href="terms.html" target="_blank">Termos de Uso</a> e <a href="privacy.html" target="_blank">Política de Privacidade</a></label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="regCommunications" name="regCommunications">
+                            <label for="regCommunications">Desejo receber comunicações e ofertas da FinançaSegura</label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" data-prev="1">Voltar</button>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="register-benefits">
+                    <h3>Por que se cadastrar?</h3>
+                    <div class="benefit-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Aprovação rápida</h4>
+                        <p>Processo de empréstimo mais ágil com seus dados salvos</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Histórico financeiro</h4>
+                        <p>Acompanhe todos seus empréstimos em um só lugar</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-gift"></i>
+                        <h4>Ofertas exclusivas</h4>
+                        <p>Taxas especiais e condições diferenciadas</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-lock"></i>
+                        <h4>Segurança garantida</h4>
+                        <p>Seus dados protegidos com criptografia avançada</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <img src="images/logo-white.png" alt="FinançaSegura" class="footer-logo">
+                        <p>A FinançaSegura é uma instituição financeira autorizada pelo Banco Central do Brasil, especializada em soluções de crédito pessoal e consignado.</p>
+                        
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Empréstimos</h3>
+                        <ul>
+                            <li><a href="pessoal.html">Pessoal</a></li>
+                            <li><a href="consignado.html">Consignado</a></li>
+                            <li><a href="refinanciamento.html">Refinanciamento</a></li>
+                            <li><a href="portability.html">Portabilidade</a></li>
+                            <li><a href="taxas-prazos.html">Taxas e prazos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Institucional</h3>
+                        <ul>
+                            <li><a href="about.html">Sobre nós</a></li>
+                            <li><a href="carrers.html">Trabalhe conosco</a></li>
+                            <li><a href="terms.html">Termos de uso</a></li>
+                            <li><a href="privacy.html">Política de privacidade</a></li>
+                            <li><a href="ombudsman.html">Ouvidoria</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Ajuda</h3>
+                        <ul>
+                            <li><a href="faq-full.html">Dúvidas frequentes</a></li>
+                            <li><a href="ombudsman.html">Atendimento</a></li>
+                            <li><a href="ombudsman.html">Canais de atendimento</a></li>
+                            <li><a href="ombudsman.html">Reclamações</a></li>
+                            <li><a href="#">SAC 0800</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Receba nossas novidades e ofertas exclusivas</p>
+                        <form id="newsletterForm">
+                            <div class="form-group">
+                                <input type="email" placeholder="Seu melhor e-mail" required>
+                                <button type="submit" class="btn-newsletter">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div class="app-download">
+                            <p>Baixe nosso app:</p>
+                            <div class="app-buttons">
+                                <a href="#"><img src="images/google-play-badge.png" alt="Disponível no Google Play"></a>
+                                <a href="#"><img src="images/app-store-badge.png" alt="Baixar na App Store"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-disclaimer">
+                        <p>FinançaSegura S.A. - CNPJ: 00.000.000/0000-00 - © 2023 Todos os direitos reservados a Nilson Gomes</p>
+                        <p>Taxas de juros válidas para contratações até 30/03/2025. Consulte condições.</p>
+                    </div>
+                    
+                    <div class="footer-seals">
+                        <img src="images/abecs-seal.png" alt="ABECS">
+                        <img src="images/banco-central-seal.png" alt="Registro Banco Central">
+                        <img src="images/procon-seal.png" alt="Procon">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+</html>
