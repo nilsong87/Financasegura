@@ -1,3 +1,10 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Reset and Base Styles */
 :root {
     --primary-color: #003366;
@@ -18,12 +25,6 @@
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     --box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s ease;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -231,6 +232,7 @@ img {
     color: var(--primary-color);
     cursor: pointer;
     display: none;
+    margin-left: 20px;
 }
 
 /* Hero Section */
@@ -1307,6 +1309,10 @@ img {
 }
 
 @media (max-width: 768px) {
+    .header-actions {
+        margin-left: -50px;
+    } 
+    
     .section-padding {
         padding: 60px 0;
     }

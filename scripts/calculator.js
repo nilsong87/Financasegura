@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             range: "min",
             min: 12,
             max: 60,
-            step: 12,
+            step: 1,  // Alterado para permitir parcelas mensais (1-60)
             value: 24,
             slide: function(event, ui) {
                 installments.value = ui.value;
@@ -60,12 +60,20 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Sync input fields with sliders
         loanAmount.addEventListener('input', function() {
-            $(amountSlider).slider('value', this.value);
+            let value = parseFloat(this.value) || 1000;
+            // Garantir que o valor está dentro dos limites
+            value = Math.min(Math.max(value, 1000), 100000);
+            this.value = value;
+            $(amountSlider).slider('value', value);
             calculateLoan();
         });
         
-        installments.addEventListener('change', function() {
-            $(installmentsSlider).slider('value', this.value);
+        installments.addEventListener('input', function() {
+            let value = parseInt(this.value) || 12;
+            // Garantir que o valor está dentro dos limites
+            value = Math.min(Math.max(value, 12), 60);
+            this.value = value;
+            $(installmentsSlider).slider('value', value);
             calculateLoan();
         });
     }
@@ -73,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Calculate loan when any input changes
     loanType.addEventListener('change', calculateLoan);
     loanAmount.addEventListener('input', calculateLoan);
-    installments.addEventListener('change', calculateLoan);
+    installments.addEventListener('input', calculateLoan);
     income.addEventListener('input', calculateLoan);
     
     // Calculate loan when form is submitted
@@ -86,14 +94,17 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function calculateLoan() {
         const type = loanType.value;
-        const amount = parseFloat(loanAmount.value) || 0;
-        const months = parseInt(installments.value) || 12;
+        let amount = parseFloat(loanAmount.value) || 0;
+        let months = parseInt(installments.value) || 12;
         const monthlyIncome = parseFloat(income.value) || 0;
         
-        // Validate inputs
-        if (!type || amount < 1000 || amount > 100000 || months < 12 || months > 60) {
-            return;
-        }
+        // Validar e ajustar valores
+        amount = Math.min(Math.max(amount, 1000), 100000);
+        months = Math.min(Math.max(months, 12), 60);
+        
+        // Atualizar os valores nos campos caso tenham sido ajustados
+        loanAmount.value = amount;
+        installments.value = months;
         
         // Get rates based on loan type
         const monthlyRate = interestRates[type] / 100;
@@ -127,7 +138,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function formatCurrency(value) {
         return new Intl.NumberFormat('pt-BR', {
             style: 'currency',
-            currency: 'BRL'
+            currency: 'BRL',
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
         }).format(value);
     }
     
@@ -144,5 +157,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Request loan button - handled in main.js
+    // Initial calculation
+    calculateLoan();
 });
