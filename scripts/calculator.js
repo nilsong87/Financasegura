@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             range: "min",
             min: 12,
             max: 60,
-            step: 1,  // Alterado para permitir parcelas mensais (1-60)
+            step: 1,
             value: 24,
             slide: function(event, ui) {
                 installments.value = ui.value;
@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Sync input fields with sliders
         loanAmount.addEventListener('input', function() {
             let value = parseFloat(this.value) || 1000;
-            // Garantir que o valor está dentro dos limites
             value = Math.min(Math.max(value, 1000), 100000);
             this.value = value;
             $(amountSlider).slider('value', value);
@@ -70,53 +69,93 @@ document.addEventListener('DOMContentLoaded', function() {
         
         installments.addEventListener('input', function() {
             let value = parseInt(this.value) || 12;
-            // Garantir que o valor está dentro dos limites
             value = Math.min(Math.max(value, 12), 60);
             this.value = value;
             $(installmentsSlider).slider('value', value);
             calculateLoan();
         });
+    } else {
+        // Caso não tenha jQuery UI, ainda calcula ao digitar
+        loanAmount.addEventListener('input', calculateLoan);
+        installments.addEventListener('input', calculateLoan);
     }
     
     // Calculate loan when any input changes
     loanType.addEventListener('change', calculateLoan);
-    loanAmount.addEventListener('input', calculateLoan);
-    installments.addEventListener('input', calculateLoan);
     income.addEventListener('input', calculateLoan);
     
     // Calculate loan when form is submitted
     if (loanCalculator) {
         loanCalculator.addEventListener('submit', function(e) {
             e.preventDefault();
+            const type = loanType.value;
+            let amount = parseFloat(loanAmount.value) || 0;
+            let months = parseInt(installments.value) || 0;
+            const monthlyIncome = parseFloat(income.value) || 0;
+
+            // Só calcula se todos os campos obrigatórios estiverem preenchidos corretamente
+            if (!type || amount < 1000 || months < 12 || monthlyIncome <= 0) {
+                resultsPlaceholder.style.display = 'block';
+                resultsContent.style.display = 'none';
+                return;
+            }
+
+            // Calcula normalmente
             calculateLoan();
+
+            // Só alerta no submit, nunca durante a digitação!
+            // Calcula a parcela para comparar
+            const monthlyRate = interestRates[type] / 100;
+            let monthlyPayment = 0;
+            if (monthlyRate > 0) {
+                monthlyPayment = amount * (monthlyRate * Math.pow(1 + monthlyRate, months)) / 
+                                 (Math.pow(1 + monthlyRate, months) - 1);
+            } else {
+                monthlyPayment = amount / months;
+            }
+            if (monthlyIncome < monthlyPayment * 3) {
+                alert('Atenção: Sua renda mensal é inferior a 3 vezes o valor da parcela. Isso pode dificultar a aprovação do empréstimo.');
+            }
         });
     }
     
     function calculateLoan() {
         const type = loanType.value;
         let amount = parseFloat(loanAmount.value) || 0;
-        let months = parseInt(installments.value) || 12;
+        let months = parseInt(installments.value) || 0;
         const monthlyIncome = parseFloat(income.value) || 0;
-        
+
+        // Só calcula se todos os campos obrigatórios estiverem preenchidos corretamente
+        if (!type || amount < 1000 || months < 12 || monthlyIncome <= 0) {
+            resultsPlaceholder.style.display = 'block';
+            resultsContent.style.display = 'none';
+            return;
+        }
+
         // Validar e ajustar valores
         amount = Math.min(Math.max(amount, 1000), 100000);
         months = Math.min(Math.max(months, 12), 60);
-        
+
         // Atualizar os valores nos campos caso tenham sido ajustados
         loanAmount.value = amount;
         installments.value = months;
-        
+
         // Get rates based on loan type
         const monthlyRate = interestRates[type] / 100;
         const annualCET = cetRates[type];
-        
+
         // Calculate monthly payment using compound interest formula
-        const monthlyPayment = amount * (monthlyRate * Math.pow(1 + monthlyRate, months)) / 
-                              (Math.pow(1 + monthlyRate, months) - 1);
-        
+        let monthlyPayment = 0;
+        if (monthlyRate > 0) {
+            monthlyPayment = amount * (monthlyRate * Math.pow(1 + monthlyRate, months)) / 
+                             (Math.pow(1 + monthlyRate, months) - 1);
+        } else {
+            monthlyPayment = amount / months;
+        }
+
         // Calculate total payment
         const totalPayment = monthlyPayment * months;
-        
+
         // Update results
         resultAmount.textContent = formatCurrency(amount);
         resultInstallments.textContent = `${months}x`;
@@ -124,15 +163,15 @@ document.addEventListener('DOMContentLoaded', function() {
         resultMonthly.textContent = formatCurrency(monthlyPayment);
         resultTotal.textContent = formatCurrency(totalPayment);
         resultCET.textContent = `${annualCET}% a.a.`;
-        
+
         // Show results
         resultsPlaceholder.style.display = 'none';
         resultsContent.style.display = 'block';
-        
-        // Validate income (minimum 3x the monthly payment)
-        if (monthlyIncome > 0 && monthlyIncome < monthlyPayment * 3) {
-            alert('Atenção: Sua renda mensal é inferior a 3 vezes o valor da parcela. Isso pode dificultar a aprovação do empréstimo.');
-        }
+
+        // REMOVA o alert daqui!
+        // if (monthlyIncome < monthlyPayment * 3) {
+        //     alert('Atenção: Sua renda mensal é inferior a 3 vezes o valor da parcela. Isso pode dificultar a aprovação do empréstimo.');
+        // }
     }
     
     function formatCurrency(value) {
@@ -150,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
         saveSimulation.addEventListener('click', function() {
             if (resultsContent.style.display !== 'none') {
                 alert('Simulação salva com sucesso! Você pode acessá-la novamente na Área do Cliente.');
-                // Here you would typically save to localStorage or send to server
+                // Aqui você pode salvar no localStorage ou enviar para o servidor
             } else {
                 alert('Por favor, realize uma simulação antes de salvar.');
             }

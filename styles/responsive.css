@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,78 @@
     
     .benefits-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .loan-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .loan-highlights {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .rates-tables {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .rates-table {
+        min-width: 0;
+        padding: 18px 8px 14px 8px;
+    }
+    .legal-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .legal-nav {
+        position: static;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container { padding: 0 10px; }
+    .section-padding { padding: 40px 0; }
+    .values-grid, .team-grid, .benefits-grid, .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .about-hero h1 { font-size: 2rem; }
+    .about-hero p { font-size: 1.05rem; }
+    .consignado-hero {
+        padding: 36px 0 24px 0;
+    }
+    .loan-cta {
+        padding: 24px 8px 18px 8px;
+    }
+    .highlight-card {
+        padding: 22px 10px 16px 10px;
+    }
+    .loan-benefits, .loan-requirements {
+        padding: 18px 8px;
+    }
+    .rates-hero {
+        padding: 36px 0 24px 0;
+    }
+    .rates-cta {
+        padding: 24px 8px 18px 8px;
+    }
+    .rates-notes {
+        padding: 12px 8px;
+    }
+    .page-hero {
+        padding: 28px 0 16px 0;
+    }
+    .legal-content {
+        padding: 12px 0;
+    }
+    .legal-nav {
+        padding: 14px 8px;
+        min-width: 0;
+    }
+    .legal-text {
+        padding: 0 4px;
     }
 }
 

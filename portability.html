@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
+    
 
     <!-- Fonts -->
     <link
@@ -24,9 +24,8 @@
 
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
+        content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://code.jquery.com https://cdn.jsdelivr.net; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">    
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
 </head>
 
@@ -333,20 +332,17 @@
 
             <div class="faq-accordion">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button">
                         <span>Quais empréstimos podem ser portados?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>É possível portar a maioria dos tipos de empréstimo, incluindo pessoal, consignado (para
-                            aposentados, pensionistas e servidores públicos), crédito imobiliário e financiamento de
-                            veículos. O empréstimo precisa estar em dia e a instituição atual deve permitir a
-                            portabilidade.</p>
+                        <p>É possível portar a maioria dos tipos de empréstimo, incluindo pessoal, consignado, crédito imobiliário e financiamento de veículos. O empréstimo precisa estar em dia e a instituição atual deve permitir a portabilidade.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button">
                         <span>Quanto tempo leva o processo?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -358,7 +354,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button">
                         <span>Preciso pagar alguma taxa?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -370,7 +366,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button">
                         <span>O que acontece se minha portabilidade for negada?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -382,7 +378,7 @@
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" type="button">
                         <span>Como fica meu score de crédito?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -431,15 +427,13 @@
                     <img src="images/logo-white.png" alt="FinançaSegura" class="footer-logo">
                     <p>A FinançaSegura é uma instituição financeira autorizada pelo Banco Central do Brasil,
                         especializada em soluções de crédito pessoal e consignado.</p>
-
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    <div class="footer-social" aria-label="Redes sociais">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-
                 <div class="footer-links">
                     <h3>Empréstimos</h3>
                     <ul>
@@ -450,7 +444,6 @@
                         <li><a href="taxas-prazos.html">Taxas e prazos</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-links">
                     <h3>Institucional</h3>
                     <ul>
@@ -461,7 +454,6 @@
                         <li><a href="ombudsman.html">Ouvidoria</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-links">
                     <h3>Ajuda</h3>
                     <ul>
@@ -472,43 +464,36 @@
                         <li><a href="#">SAC 0800</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-newsletter">
                     <h3>Newsletter</h3>
                     <p>Receba nossas novidades e ofertas exclusivas</p>
-                    <form id="newsletterForm">
+                    <form id="newsletterForm" autocomplete="off">
                         <div class="form-group">
-                            <input type="email" placeholder="Seu melhor e-mail" required>
-                            <button type="submit" class="btn-newsletter">
+                            <label for="newsletterEmail" class="sr-only">Seu melhor e-mail</label>
+                            <input type="email" id="newsletterEmail" placeholder="Seu melhor e-mail" required>
+                            <button type="submit" class="btn-newsletter" aria-label="Inscrever-se">
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
                     </form>
-
                     <div class="app-download">
                         <p>Baixe nosso app:</p>
                         <div class="app-buttons">
-                            <a href="#"><img src="images/google-play-badge.png" alt="Disponível no Google Play"></a>
-                            <a href="#"><img src="images/app-store-badge.png" alt="Baixar na App Store"></a>
+                            <a href="#" aria-label="Google Play"><img src="images/google-play-badge.png" alt="Disponível no Google Play"></a>
+                            <a href="#" aria-label="App Store"><img src="images/app-store-badge.png" alt="Baixar na App Store"></a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <div class="footer-disclaimer">
-                    <p>FinançaSegura S.A. - CNPJ: 00.000.000/0000-00 - © 2023 Todos os direitos reservados a Nilson
-                        Gomes</p>
+                    <p>FinançaSegura S.A. - CNPJ: 00.000.000/0000-00 - © 2023 Todos os direitos reservados a Nilson Gomes</p>
                     <p>Taxas de juros válidas para contratações até 30/03/2025. Consulte condições.</p>
                 </div>
-
                 <div class="footer-seals">
-                    <a href="https://www.bcb.gov.br" target="_blank"><img src="images/bacen-logo.png"
-                            alt="Registrado no BACEN"></a>
-                    <a href="https://www.abecs.org.br" target="_blank"><img src="images/abecs-logo.png"
-                            alt="Associado ABECS"></a>
-                    <a href="https://www.reclameaqui.com.br" target="_blank"><img src="images/reclame-aqui.png"
-                            alt="Ótimo no Reclame Aqui"></a>
+                    <a href="https://www.bcb.gov.br" target="_blank" rel="noopener"><img src="images/bacen-logo.png" alt="Registrado no BACEN"></a>
+                    <a href="https://www.abecs.org.br" target="_blank" rel="noopener"><img src="images/abecs-logo.png" alt="Associado ABECS"></a>
+                    <a href="https://www.reclameaqui.com.br" target="_blank" rel="noopener"><img src="images/reclame-aqui.png" alt="Ótimo no Reclame Aqui"></a>
                 </div>
             </div>
         </div>
@@ -516,17 +501,18 @@
 
     <!-- Floating WhatsApp -->
     <div class="floating-whatsapp" style="margin-right: 60px;">
-        <a href="https://wa.me/551140044004" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/551140044004" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
             <span>Precisa de ajuda?</span>
         </a>
     </div>
 
     <!-- Back to Top -->
-    <button class="back-to-top">
+    <button class="back-to-top" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </button>
-    
-</body>
 
+    
+<script src="scripts/faq.js"></script>
+</body>
 </html>
