@@ -1,0 +1,127 @@
+/* Rates Hero Section */
+.rates-hero {
+    background: linear-gradient(120deg, #f7b267 0%, #fff8f1 100%);
+    padding: 60px 0 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #f7b26733;
+}
+.rates-hero h1 {
+    font-size: 2.5rem;
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.rates-hero p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0;
+}
+.rates-tables {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.rates-table {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #f7b26722;
+    padding: 32px 24px 24px 24px;
+    min-width: 320px;
+    flex: 1 1 320px;
+    margin-bottom: 24px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.rates-table:hover {
+    box-shadow: 0 8px 32px #f7b26744;
+    transform: translateY(-8px) scale(1.04);
+}
+.rates-table h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+.rates-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+    background: transparent;
+}
+.rates-table th, .rates-table td {
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 0.90rem;
+}
+.rates-table th {
+    font-size: 0.90rem;
+    font-weight: 600;
+    padding: 8px 6px;
+    background: #f7b26722;
+    color: #1a365d;
+    font-weight: 700;
+}
+.rates-table tr:nth-child(even) td {
+    background: #fff8f1;
+}
+.rates-table tr:hover td {
+    background: #f7b26711;
+}
+.rates-disclaimer .alert-info {
+    background: #fff8f1;
+    color: #1a365d;
+    border-left: 5px solid #f7b267;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1.05rem;
+}
+.rates-disclaimer .alert-info i {
+    font-size: 1.5rem;
+    color: #f7b267;
+    margin-top: 2px;
+}
+.rates-notes {
+    margin: 32px 0 24px 0;
+    background: #fff8f1;
+    border-radius: 10px;
+    padding: 22px 28px;
+    box-shadow: 0 2px 8px #f7b26722;
+}
+.rates-notes h3 {
+    color: #1a365d;
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+.rates-notes ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #444;
+    font-size: 1.02rem;
+}
+.rates-notes li {
+    margin-bottom: 8px;
+}
+
+/* Página Hero para Tabelas */
+.page-hero {
+    background: linear-gradient(120deg, #f7b267 0%, #fff8f1 100%);
+    padding: 56px 0 32px 0;
+    text-align: center;
+    border-bottom: 2px solid #f7b26733;
+}
+.page-hero h1 {
+    font-size: 2.2rem;
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.page-hero p {
+    font-size: 1.08rem;
+    color: #444;
+    margin-bottom: 0;
+}

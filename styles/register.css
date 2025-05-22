@@ -1,0 +1,99 @@
+/* Register Section */
+.register-section {
+    max-width: 480px;
+    margin: 60px auto 40px auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #f7b26722;
+    padding: 38px 28px 28px 28px;
+    text-align: center;
+}
+.register-section h1 {
+    font-size: 1.5rem;
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.register-section p {
+    color: #444;
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+}
+.register-section .form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+.register-section label {
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 6px;
+    display: block;
+}
+.register-section input[type="text"],
+.register-section input[type="email"],
+.register-section input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #f7b26766;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #fff8f1;
+    margin-bottom: 10px;
+    transition: border 0.2s;
+}
+.register-section input:focus {
+    border-color: #f7b267;
+    outline: none;
+}
+.register-section .btn-primary {
+    background: linear-gradient(90deg, #f7b267, #f4845f);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.2s, transform 0.2s;
+}
+.register-section .btn-primary:hover {
+    background: linear-gradient(90deg, #f4845f, #f7b267);
+    transform: scale(1.03);
+}
+.register-section .login-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #f4845f;
+    font-size: 1rem;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+.register-section .login-link:hover {
+    color: #1a365d;
+}
+.register-section .success-message {
+    color: #2ECC71;
+    font-weight: 600;
+    margin-top: 18px;
+}
+.register-section .error-message {
+    color: #E74C3C;
+    font-weight: 600;
+    margin-top: 18px;
+}
+
+/* Password input visibility toggle */
+.password-input {
+    position: relative;
+}
+.show-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--gray-medium);
+    cursor: pointer;
+}
+

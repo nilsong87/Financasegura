@@ -1,0 +1,118 @@
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('images/about-hero.jpg') center/cover no-repeat;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #f5e6d8;
+}
+.about-hero h1 {
+    font-size: 2.8rem;
+    color: #1a365d;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.about-hero p {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* Story Timeline */
+.story-timeline {
+    margin: 60px 0;
+    gap: 40px;
+}
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+.timeline-year {
+    min-width: 70px;
+    font-size: 1.3rem;
+    padding: 22px 0;
+}
+.timeline-content {
+    padding: 22px 32px;
+    font-size: 1.08rem;
+}
+
+/* Valores */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin-top: 30px;
+}
+.value-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #f7b26722;
+    padding: 32px 18px 22px 18px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border-bottom: 4px solid #f7b267;
+}
+.value-card:hover {
+    box-shadow: 0 6px 24px #f7b26744;
+    transform: translateY(-6px) scale(1.03);
+}
+.value-icon {
+    font-size: 2.5rem;
+    color: #f7b267;
+    margin-bottom: 12px;
+}
+.value-card h3 {
+    font-size: 1.2rem;
+    color: #1a365d;
+    margin-bottom: 8px;
+}
+.value-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Equipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 32px;
+    margin-top: 30px;
+}
+.team-member {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #f7b26722;
+    text-align: center;
+    padding: 28px 12px 18px 12px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.team-member:hover {
+    box-shadow: 0 8px 32px #f7b26744;
+    transform: translateY(-8px) scale(1.04);
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border: 4px solid var(--secondary-color);
+}
+.team-member h3 {
+    font-size: 1.18rem;
+    font-weight: 700;
+}
+.team-member p {
+    margin: 0 0 8px 0;
+    color: #888;
+    font-size: 0.98rem;
+}
+.member-social a {
+    color: #f7b267;
+    font-size: 1.2rem;
+    margin: 0 4px;
+    transition: color 0.2s;
+}
+.member-social a:hover {
+    color: #1a365d;
+}
+

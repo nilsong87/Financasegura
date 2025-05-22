@@ -1,0 +1,125 @@
+/* Banner Hero Consignado */
+.consignado-hero {
+    background: linear-gradient(120deg, #f7b267 0%, #fff8f1 100%);
+    padding: 60px 0 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #f7b26733;
+}
+.consignado-hero h1 {
+    font-size: 2.5rem;
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.consignado-hero p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* Loan Highlights Section */
+.loan-highlights {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 40px 0 32px 0;
+    flex-wrap: wrap;
+}
+.highlight-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #f7b26722;
+    padding: 32px 24px 24px 24px;
+    text-align: center;
+    min-width: 220px;
+    flex: 1 1 220px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border-bottom: 4px solid #f7b267;
+}
+.highlight-card:hover {
+    box-shadow: 0 8px 32px #f7b26744;
+    transform: translateY(-8px) scale(1.04);
+}
+.highlight-card i {
+    font-size: 2.2rem;
+    color: #f7b267;
+    margin-bottom: 12px;
+}
+.highlight-card h3 {
+    font-size: 1.15rem;
+    color: #1a365d;
+    margin-bottom: 8px;
+}
+.highlight-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+.loan-content {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0 0 0;
+    flex-wrap: wrap;
+}
+.loan-benefits, .loan-requirements {
+    background: #fff8f1;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #f7b26722;
+    padding: 28px 24px;
+    flex: 1 1 320px;
+    min-width: 260px;
+}
+.loan-benefits h2, .loan-requirements h2 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+}
+.loan-benefits ul, .loan-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.loan-benefits li, .loan-requirements li {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.loan-benefits li i, .loan-requirements li i {
+    color: #f7b267;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.loan-cta {
+    background: linear-gradient(90deg, #f7b267 60%, #fff8f1 100%);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px #f7b26722;
+    text-align: center;
+    padding: 38px 18px 32px 18px;
+    margin: 48px 0 0 0;
+}
+.loan-cta h2 {
+    color: #1a365d;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.loan-cta p {
+    color: #444;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+}
+.loan-cta .btn-primary {
+    font-size: 1.1rem;
+    padding: 12px 32px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #f7b267, #f4845f);
+    color: #fff;
+    border: none;
+    transition: background 0.2s, transform 0.2s;
+}
+.loan-cta .btn-primary:hover {
+    background: linear-gradient(90deg, #f4845f, #f7b267);
+    transform: scale(1.04);
+}

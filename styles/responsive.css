@@ -124,3 +124,484 @@
         font-size: 12px;
     }
 }
+
+@media (max-width: 1100px) {
+    .ombudsman-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .ombudsman-form {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+@media (max-width: 700px) {
+    .ombudsman-section {
+        padding: 18px 0 8px 0;
+    }
+    .ombudsman-form, .ombudsman-info {
+        padding: 0 4px;
+    }
+    .channels-grid {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .ombudsman-faq {
+        padding: 14px 6px;
+    }
+    .faq-question, .faq-answer {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    .footer-seals {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        flex-direction: column;
+        gap: 28px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+    .footer-seals {
+        justify-content: center;
+    }
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-footer {
+        padding: 32px 0 0 0;
+    }
+    .footer-bottom {
+        padding: 18px 0 10px 0;
+    }
+    .footer-seals img {
+        height: 30px;
+        padding: 2px 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade global */
+@media (max-width: 1024px) {
+    .container { padding: 0 12px; }
+}
+
+@media (max-width: 900px) {
+    .main-header nav ul {
+        display: none;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-padding { padding: 40px 0; }
+    .section-title { font-size: 1.4rem; }
+}
+
+
+/* Responsividade para index */
+@media (max-width: 1200px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .loan-cards, .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .testimonials-slider {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 0 36px 0;
+        min-height: 320px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero .subtitle {
+        font-size: 1.05rem;
+    }
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+    .loan-card,
+    .benefit-card,
+    .testimonial-card {
+        padding: 18px 8px 14px 8px;
+    }
+    .loan-icon,
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+    .trust-badges img {
+        height: 36px;
+    }
+}
+
+@media (max-width: 700px) {
+    .faq-section {
+        padding: 40px 0 24px 0;
+        border-radius: 0 0 18px 18px;
+    }
+    .faq-header h2 {
+        font-size: 1.4rem;
+    }
+    .faq-header p {
+        font-size: 1rem;
+    }
+    .faq-question {
+        font-size: 1rem;
+        padding: 16px 14px;
+    }
+    .faq-answer,
+    .faq-item.active .faq-answer {
+        padding: 0 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-info,
+    .contact-form-container {
+        margin-bottom: 18px;
+        padding: 18px 8px;
+    }
+}
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 40px 0 18px 0;
+        border-radius: 0 0 18px 18px;
+    }
+    .contact-header h2 {
+        font-size: 1.3rem;
+    }
+    .contact-header p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsividade para About */
+@media (max-width: 900px) {
+    .story-timeline {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .timeline-content {
+        padding: 18px 12px;
+    }
+    .values-grid, .team-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 32px 0 18px 0;
+    }
+    .about-hero h1 {
+        font-size: 1.7rem;
+    }
+    .about-hero p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Responsividade para Careers */
+@media (max-width: 900px) {
+    .jobs-list, .careers-benefits {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .career-apply-form {
+        padding: 18px 8px;
+    }
+}
+@media (max-width: 600px) {
+    .careers-hero {
+        padding: 32px 0 18px 0;
+    }
+    .careers-hero h1 {
+        font-size: 1.7rem;
+    }
+    .careers-hero p {
+        font-size: 1.05rem;
+    }
+}
+
+/* Responsividade Consignado */
+@media (max-width: 900px) {
+    .loan-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .loan-highlights {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .consignado-hero {
+        padding: 36px 0 24px 0;
+    }
+    .consignado-hero h1 {
+        font-size: 1.5rem;
+    }
+    .consignado-hero p {
+        font-size: 1rem;
+    }
+    .loan-cta {
+        padding: 24px 8px 18px 8px;
+    }
+    .highlight-card {
+        padding: 22px 10px 16px 10px;
+    }
+    .loan-benefits, .loan-requirements {
+        padding: 18px 8px;
+    }
+}
+
+/* Responsividade FAQ */
+@media (max-width: 600px) {
+    .faq-accordion {
+        padding: 0 6px;
+    }
+}
+
+/* Responsividade Forgot Password */
+@media (max-width: 600px) {
+    .forgot-password-section {
+        padding: 18px 6px;
+    }
+    .forgot-password-section h1 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsividade Login */
+@media (max-width: 600px) {
+    .login-section {
+        padding: 18px 6px;
+    }
+    .login-section h1 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsividade Ombudsman */
+@media (max-width: 900px) {
+    .ombudsman-container {
+        flex-direction: column;
+    }
+    .ombudsman-form {
+        margin-left: 0;
+        margin-top: 32px;
+    }
+}
+@media (max-width: 600px) {
+    .ombudsman-faq, .ombudsman-form {
+        padding: 14px 6px;
+    }
+}
+
+/* Responsividade Pessoal */
+@media (max-width: 900px) {
+    .pessoal-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .pessoal-highlights {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .pessoal-hero {
+        padding: 36px 0 24px 0;
+    }
+    .pessoal-hero h1 {
+        font-size: 1.5rem;
+    }
+    .pessoal-hero p {
+        font-size: 1rem;
+    }
+    .pessoal-cta {
+        padding: 24px 8px 18px 8px;
+    }
+    .pessoal-highlight-card {
+        padding: 22px 10px 16px 10px;
+    }
+    .pessoal-benefits, .pessoal-requirements {
+        padding: 18px 8px;
+    }
+}
+
+/* Responsividade Portabilidade */
+@media (max-width: 900px) {
+    .portability-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .portability-highlights {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .portability-hero {
+        padding: 36px 0 24px 0;
+    }
+    .portability-hero h1 {
+        font-size: 1.5rem;
+    }
+    .portability-hero p {
+        font-size: 1rem;
+    }
+    .portability-cta {
+        padding: 24px 8px 18px 8px;
+    }
+    .portability-highlight-card {
+        padding: 22px 10px 16px 10px;
+    }
+    .portability-benefits, .portability-requirements {
+        padding: 18px 8px;
+    }
+}
+
+/* Responsividade Legal/Privacy */
+@media (max-width: 1024px) {
+    .legal-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .legal-nav {
+        position: static;
+        margin-bottom: 24px;
+    }
+}
+
+/* Responsividade Refinanciamento */
+@media (max-width: 900px) {
+    .refin-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .refin-highlights {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .refin-hero {
+        padding: 36px 0 24px 0;
+    }
+    .refin-hero h1 {
+        font-size: 1.5rem;
+    }
+    .refin-hero p {
+        font-size: 1rem;
+    }
+    .refin-cta {
+        padding: 24px 8px 18px 8px;
+    }
+    .refin-highlight-card {
+        padding: 22px 10px 16px 10px;
+    }
+    .refin-benefits, .refin-requirements {
+        padding: 18px 8px;
+    }
+}
+
+/* Responsividade Register */
+@media (max-width: 600px) {
+    .register-section {
+        padding: 18px 6px;
+    }
+    .register-section h1 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsividade Taxas-Prazos*/
+@media (max-width: 700px) {
+    .taxas-table-section {
+        padding: 18px 8px 18px 8px;
+        font-size: 1rem;
+    }
+    .taxas-hero {
+        padding: 28px 0 16px 0;
+    }
+    .taxas-hero h1 {
+        font-size: 1.3rem;
+    }
+    .taxas-table th, .taxas-table td {
+        padding: 10px 4px;
+        font-size: 0.98rem;
+    }
+}
+
+/* Responsividade Legal/Terms */
+@media (max-width: 1024px) {
+    .legal-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .legal-nav {
+        position: static;
+        margin-bottom: 24px;
+    }
+}

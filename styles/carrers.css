@@ -1,0 +1,168 @@
+/* Careers Hero Section */
+.careers-hero {
+    background: linear-gradient(120deg, #f7b267 0%, #fff8f1 100%);
+    padding: 60px 0 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #f7b26733;
+}
+.careers-hero h1 {
+    font-size: 2.5rem;
+    color: #1a365d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.careers-hero p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* Vagas em aberto */
+.jobs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin: 40px 0 32px 0;
+}
+.job-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px #f7b26722;
+    padding: 32px 24px 24px 24px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border-bottom: 4px solid #f7b267;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.job-card:hover {
+    box-shadow: 0 8px 32px #f7b26744;
+    transform: translateY(-8px) scale(1.04);
+}
+.job-card h3 {
+    font-size: 1.18rem;
+    color: #1a365d;
+    margin-bottom: 8px;
+}
+.job-card p {
+    color: #444;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+.job-info {
+    display: flex;
+    gap: 18px;
+    font-size: 0.98rem;
+    color: #888;
+    margin-bottom: 12px;
+}
+.job-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.job-card .btn-primary {
+    align-self: flex-start;
+    font-size: 1.05rem;
+    padding: 10px 28px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #f7b267, #f4845f);
+    color: #fff;
+    border: none;
+    transition: background 0.2s, transform 0.2s;
+}
+.job-card .btn-primary:hover {
+    background: linear-gradient(90deg, #f4845f, #f7b267);
+    transform: scale(1.04);
+}
+
+/* Trabalhe Conosco - Benefícios */
+.careers-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    margin: 48px 0 32px 0;
+}
+.career-benefit-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #f7b26722;
+    padding: 32px 18px 22px 18px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border-bottom: 4px solid #f7b267;
+}
+.career-benefit-card:hover {
+    box-shadow: 0 6px 24px #f7b26744;
+    transform: translateY(-6px) scale(1.03);
+}
+.career-benefit-icon {
+    font-size: 2.2rem;
+    color: #f7b267;
+    margin-bottom: 12px;
+}
+.career-benefit-card h3 {
+    font-size: 1.08rem;
+    color: #1a365d;
+    margin-bottom: 8px;
+}
+.career-benefit-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Formulário de candidatura */
+.career-apply-form {
+    background: #fff8f1;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px #f7b26722;
+    padding: 32px 24px;
+    margin: 40px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.career-apply-form h2 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+}
+.career-apply-form .form-group label {
+    font-weight: 600;
+    color: #1a365d;
+}
+.career-apply-form input,
+.career-apply-form select,
+.career-apply-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #f7b26766;
+    border-radius: 6px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+.career-apply-form input:focus,
+.career-apply-form select:focus,
+.career-apply-form textarea:focus {
+    border-color: #f7b267;
+    outline: none;
+}
+.career-apply-form .btn-primary {
+    background: linear-gradient(90deg, #f7b267, #f4845f);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.08rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.2s, transform 0.2s;
+}
+.career-apply-form .btn-primary:hover {
+    background: linear-gradient(90deg, #f4845f, #f7b267);
+    transform: scale(1.03);
+}
+
